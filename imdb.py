@@ -1,5 +1,6 @@
 import json
 
+print(json.dumps({'step': 5, 'accuracy': 0.2, 'loss': 0.1}))
 print(json.dumps({'step': 10, 'accuracy': 0.2}))
 print(json.dumps({'step': 20, 'accuracy': 0.5}))
 print(json.dumps({'step': 30, 'accuracy': 0.9}))
