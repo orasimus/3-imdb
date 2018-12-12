@@ -19,3 +19,14 @@
     name: 3_boston
     image: valohai/keras:2.0.0-tensorflow1.0.1-python3.6-cuda8.0-cudnn5-devel-ubuntu16.04
     command: python 3_boston.py
+
+- step:
+    name: stringparam
+    image: python:3.6
+    command: echo world {parameters}
+    parameters:
+      - name: param
+        pass-as: --param={v}
+        type: string
+        default: joojoo
+
